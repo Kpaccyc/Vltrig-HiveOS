@@ -30,3 +30,4 @@ Fill the fields as follows:
 --dns-doh-primary=HOST    Primary DoH server (default: dns.google)
 --dns-doh-fallback=HOST   Fallback DoH server (default: dns.nextdns.io)
 ```
+All configuration commands are entered sequentially as to start the miner from the command line
