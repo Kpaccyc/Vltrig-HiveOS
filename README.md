@@ -25,8 +25,8 @@ Fill the fields as follows:
 ### Excta config arguments:
 
 ```json
---dns-pool-ns            Enable authoritative NS resolution (default: enabled)
+--dns-pool-ns             Enable authoritative NS resolution (default: enabled)
 --no-dns-pool-ns          Disable, use system DNS
 --dns-doh-primary=HOST    Primary DoH server (default: dns.google)
---dns-doh-fallback=HOST    Fallback DoH server (default: dns.nextdns.io)
+--dns-doh-fallback=HOST   Fallback DoH server (default: dns.nextdns.io)
 ```
