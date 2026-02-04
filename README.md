@@ -3,6 +3,8 @@
 ### Current XMRig-AMD version
 * v6.25.0.3 https://github.com/HashVault/vltrig/releases/tag/v6.25.0.3
 
+Note: Prebuilt binaries are CPU-only
+
 ### Download
 
 * Binary releases https://github.com/Kpaccyc/Vltrig-HiveOS/releases
