@@ -15,12 +15,10 @@ Fill the fields as follows:
 ```vltrig```
 * Installation URL:
 ```https://github.com/Kpaccyc/Vltrig-HiveOS/releases/download/Release/vltrig.tar.gz```
-* Hash algorithm:
-```Chose coin algo```
 * Wallet and worker template:
 ```%WAL%```
 * Pass:
-```%WORKER_NAME```
+```%WORKER_NAME%```
 
 <img width="681" height="700" alt="settings" src="https://github.com/user-attachments/assets/a2c7be2e-948b-4403-866f-43924fdcc24c" />
 
