@@ -27,10 +27,5 @@ then
   apt-get install libmicrohttpd-dev -y;
 fi
 
-# HugePages tunning
-function HugePagesTune(){
-          sysctl -w vm.nr_hugepages=0 > /dev/null
-          hugepages -erx || hugepages -rx
-}
 cd /hive/miners/custom
 ./vltrig --log-file=$CUSTOM_LOG_BASENAME.log --http-port=$CUSTOM_API_PORT $(< $CUSTOM_CONFIG_FILENAME) $@ 2>&1
