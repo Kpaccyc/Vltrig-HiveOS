@@ -18,6 +18,7 @@ if [ $(cat control | grep -i "Version: $CUSTOM_VERSION" | wc -l) -eq 0 ];
         then
                 mv $CUSTOM_CONFIG_FILENAME /hive/miners/custom/;
                 /hive/miners/custom/custom-get https://github.com/Kpaccyc/Vltrig-HiveOS/releases/download/Release/vltrig.tar.gz -f;
+                mv /hive/miners/custom/config.conf $CUSTOM_CONFIG_FILENAME;
 fi
 rm -f control
 
@@ -27,5 +28,5 @@ then
   apt-get install libmicrohttpd-dev -y;
 fi
 
-cd /hive/miners/custom
+cd /hive/miners/custom/$CUSTOM_NAME
 ./vltrig --log-file=$CUSTOM_LOG_BASENAME.log --http-port=$CUSTOM_API_PORT $(< $CUSTOM_CONFIG_FILENAME) $@ 2>&1
